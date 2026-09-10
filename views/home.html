@@ -4,6 +4,12 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Landon | Home</title>
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+    crossorigin="anonymous"
+  />
   <link rel="stylesheet" href="../resources/css/styles.css" />
 </head>
 <body>
@@ -14,37 +20,52 @@
     <p>CS Student @ CU Boulder</p>
   </header>
 
+  <!-- Bootstrap component #1: Navbar -->
   <!-- PARENT-CHILD EXAMPLE: <nav> is the parent, each <a> is a child -->
-  <nav>
-    <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="hobbies.html">Hobbies</a></li>
-      <li><a href="projects.html">Projects</a></li>
-      <li><a href="resume.html">Resume</a></li>
-    </ul>
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+    <div class="container">
+      <a class="navbar-brand" href="home.html">Landon</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="home.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+        </ul>
+      </div>
+    </div>
   </nav>
 
-  <main>
-    <section id="intro">
+  <!-- Bootstrap container -->
+  <main class="container mt-4">
+    <section id="intro" class="text-center py-5">
       <h2>Welcome</h2>
 
       <!-- ATTRIBUTE EXAMPLE: src and alt are attributes of the img element -->
-      <img src="../resources/img/profile.jpg" alt="Photo of Landon" width="250" />
+      <img src="../resources/img/profile.jpg" alt="Photo of Landon" width="250" class="rounded-circle shadow mb-3" />
 
-      <p>
+      <p class="mx-auto" style="max-width: 600px;">
         Hi, I'm Landon. I'm a Computer Science major (Philosophy minor) at CU Boulder.
         Over the summer I run my own small moving business, and during the school year
         I play rugby for CU. This site is a quick look at who I am, what I've built, and
         what I'm interested in.
       </p>
 
-      <a href="projects.html" class="btn">See my projects</a>
+      <a href="projects.html" class="btn btn-primary mt-2">See my projects</a>
     </section>
   </main>
 
-  <footer>
+  <footer class="text-center py-3 mt-4">
     <p>Find me on <a href="https://www.linkedin.com/in/landoncovele">LinkedIn</a></p>
   </footer>
 
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"
+  ></script>
 </body>
 </html>
