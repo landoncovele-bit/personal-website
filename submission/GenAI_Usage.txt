@@ -1,0 +1,71 @@
+GenAI Usage
+
+1. The AI Tool
+
+AI tool: ChatGPT
+Variant: GPT-5.6 Luna
+
+2. Your Prompt
+
+Generate a barebones HTML structure for a simple four-page personal website. Only provide the basic HTML skeleton and semantic elements needed for the page structure. Do not add CSS, JavaScript, Bootstrap components, styling, extra sections, or finished website content. I will add the navigation details, page content, styling, responsive design, and other features myself. The code should be simple enough for me to inspect and explain line by line.
+
+3. The AI's Suggestion
+
+The AI suggested using a standard HTML5 document structure with a doctype, html, head, and body elements. It also suggested semantic elements such as header, nav, main, and footer. A representative version of the generated structure was:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Title</title>
+</head>
+<body>
+    <header>
+        <h1>Page Title</h1>
+    </header>
+
+    <nav>
+        <!-- Navigation will be added manually -->
+    </nav>
+
+    <main>
+        <!-- Page content will be added manually -->
+    </main>
+
+    <footer>
+        <!-- Footer content will be added manually -->
+    </footer>
+</body>
+</html>
+
+4. Your Evaluation
+
+What did the AI produce correctly?
+The AI produced a valid basic HTML5 structure. It included the doctype declaration, language attribute, character encoding, viewport setting, and semantic page sections. It also followed my instruction to avoid adding CSS, JavaScript, or a complete website.
+
+What part did you need to change?
+I changed the structure by making the navigation and page-specific content more explicit in my own version. I also removed unnecessary placeholder content and kept the skeleton focused on the requirements of my assignment. The AI-generated structure was a starting point rather than the final page.
+
+How did you verify that the code worked?
+I opened the HTML file in a web browser and checked that the document loaded without an HTML parsing error. I also inspected the page structure using the browser's developer tools and confirmed that the header, navigation, main content, and footer appeared in the expected order.
+
+Choose one line of generated code and explain it in your own words.
+The line '<meta name="viewport" content="width=device-width, initial-scale=1.0">' tells the browser to make the page's layout use the device's screen width and start at a normal zoom level. This is important for making the page behave properly on phones and other smaller screens.
+
+5. Your Revision
+
+I made a meaningful structural revision by changing the generic navigation placeholder into a navigation list that I could use consistently across the four pages. Instead of leaving the navigation as only an empty <nav> element, I used a list of links and then customized the link destinations for my pages.
+
+Example revision:
+
+<nav>
+    <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="resume.html">Contact</a></li>
+    </ul>
+</nav>
+
+This is a meaningful change because it changes the actual HTML structure and adds functional navigation rather than only changing text, colors, or variable names.
